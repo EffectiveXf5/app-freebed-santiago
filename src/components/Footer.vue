@@ -2,13 +2,17 @@
   <footer>
       <ul>
           <li>
-              <i class="fa fa-bed" aria-hidden="true"></i>
+              <img src="../assets/profile-user.svg" alt="">
           </li>
-          <li>&#x1f6cc;&#xfe0e</li>
           <li>
-              <i class="fas fa-bed"></i>
+              <img src="../assets/bed.svg" alt="">
           </li>
-          <li></li>
+          <li>
+              <img src="../assets/chat.svg" alt="">
+          </li>
+          <li>
+              <img src="../assets/location-pin.svg" alt="">  
+          </li>
       </ul>
   </footer>
 </template>
@@ -20,5 +24,15 @@ export default {
 </script>
 
 <style>
-
+    footer{
+        background-color: var(--secondary-color);
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+    footer ul{
+        padding: 1.5vh;
+        display: flex;
+        justify-content: space-between;
+    }
 </style>
