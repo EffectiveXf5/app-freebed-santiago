@@ -6,7 +6,7 @@
 
     <section>
       <form>
-        <label for="email">Email</label>
+        <label>Email</label>
         <input type="email" placeholder="Usuario...">
         <label>Contraseña</label>
         <input type="password" placeholder="Contraseña...">
