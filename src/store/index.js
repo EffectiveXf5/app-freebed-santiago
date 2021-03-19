@@ -5,15 +5,17 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    hotels : []
+    hotels: []
   },
+
   mutations: {
     setHotels(state, payload){
       state.hotels = payload
     }
   },
+
   actions: {
-    async getHotels({commit}){
+    async getHotels({ commit }){
       try{
         const res = await fetch('api.json')
         const data = await res.json()
@@ -24,6 +26,7 @@ export default new Vuex.Store({
       }
     }
   },
+
   modules: {
   }
 })

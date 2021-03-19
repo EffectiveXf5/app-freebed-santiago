@@ -1,7 +1,7 @@
 <template>
     <main>
         <section>
-            <article v-for="(item, index) in hotels" :key="index">
+            <article v-for="item in items" v-bind:key="item.id">
                 <h3>{{item.title}}</h3>
                 <p>{{item.body}}</p>
             </article>
@@ -12,35 +12,24 @@
 
 <script>
 import Footer from '@/components/Footer.vue'
+import hotels from '../assets/data/api.json'
+
 
 export default {
 
-    name:'Costa',
+    name:'Primitivo',
     components: {
         Footer
     },
 
-    data() {
-        return {
-            hotels: ''
-        }
-    },
-
-    created() {
-        this.getHotels();
-    },
-
-    methods: {
-        async getHotels() {
-            try{
-                const res = await fetch('https://jsonplaceholder.typicode.com/posts')
-                const data = await res.json()
-                this.hotels = data;
-            }catch(error){
-                console.log(error)
-            }
+    computed: {
+        items() {
+            return hotels.map((hotel) => {
+                return hotel
+            })
         }
     }
+
 }
 </script>
 
