@@ -9,7 +9,7 @@ export default new Vuex.Store({
   },
   mutations: {
     setHotels(state, payload){
-      state.hotels= payload
+      state.hotels = payload
     }
   },
   actions: {

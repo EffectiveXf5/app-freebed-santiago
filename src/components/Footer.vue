@@ -28,14 +28,14 @@ export default {
 
 <style>
 
-    footer{
+    footer {
       background-color: var(--secondary-color);
-      position: absolute;
+      position: fixed;
       bottom: 0;
       width: 100%;
     }
 
-    footer ul{
+    footer ul {
       padding: 1.5vh;
       display: flex;
       justify-content: space-between;

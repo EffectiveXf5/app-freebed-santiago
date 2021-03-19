@@ -1,28 +1,55 @@
 <template>
     <main>
-        <article>
-           <h3>{{hotel}}</h3>
-           <p>Body:</p>
-        </article>
+        <section>
+            <article v-for="(item, index) in hotels" :key="index">
+                <h3>{{item.title}}</h3>
+                <p>{{item.body}}</p>
+            </article>
+        </section>
+    <Footer />
     </main>
 </template>
 
 <script>
-import {mapActions} from 'vuex'
+import Footer from '@/components/Footer.vue'
 
 export default {
+
     name:'Costa',
-    data (){
+    components: {
+        Footer
+    },
+
+    data() {
         return {
-            hotel: ''
+            hotels: ''
         }
     },
+
+    created() {
+        this.getHotels();
+    },
+
     methods: {
-        ...mapActions(['getHotels'])
+        async getHotels() {
+            try{
+                const res = await fetch('https://jsonplaceholder.typicode.com/posts')
+                const data = await res.json()
+                this.hotels = data;
+            }catch(error){
+                console.log(error)
+            }
+        }
     }
 }
 </script>
 
-<style>
+<style> 
+
+    main section article {
+        width: 75vw;
+        height: 25vh;
+        margin: auto;
+    }
 
 </style>
