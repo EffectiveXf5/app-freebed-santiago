@@ -2,23 +2,23 @@
   <footer>
       <ul>
         <li>
-          <img src="../assets/profile-user.svg" alt="Icono de usuario para login">
+          <img src="../assets/icons/profile-user.svg" alt="Icono de usuario para login">
         </li>
 
         <li>
-          <img src="../assets/bed.svg" alt="Icono de una cama">
+          <img src="../assets/icons/bed.svg" alt="Icono de una cama">
         </li>
           
         <li>
-          <img src="../assets/chat.svg" alt="Icono de mensajes para chat">
+          <img src="../assets/icons/chat.svg" alt="Icono de mensajes para chat">
         </li>
 
         <li>
-          <img src="../assets/location-pin.svg" alt="Icono de localización">  
+          <img src="../assets/icons/location-pin.svg" alt="Icono de localización">  
         </li>
       </ul>
   </footer>
-</template>
+</template>icons/
 
 <script>
 export default {
