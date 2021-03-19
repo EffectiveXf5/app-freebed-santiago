@@ -1,9 +1,9 @@
 <template>
     <main>
         <section>
-            <article v-for="(item, index) in hotels" :key="index">
-                <h3>{{item.title}}</h3>
-                <p>{{item.body}}</p>
+            <article v-for="hotel in hotels" :key="hotel.id">
+                <h3>{{hotel.title}}</h3>
+                <p>{{hotel.body}}</p>
             </article>
         </section>
     <Footer />
@@ -35,6 +35,7 @@ export default {
             try{
                 const res = await fetch('https://jsonplaceholder.typicode.com/posts')
                 const data = await res.json()
+                console.log(data)
                 this.hotels = data;
             }catch(error){
                 console.log(error)

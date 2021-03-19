@@ -1,9 +1,9 @@
 <template>
     <main>
         <section>
-            <article v-for="item in items" v-bind:key="item.id">
-                <h3>{{item.title}}</h3>
-                <p>{{item.body}}</p>
+            <article v-for="hotel in items" :key="hotel.id">
+                <h3>{{hotel.title}}</h3>
+                <p>{{hotel.body}}</p>
             </article>
         </section>
     <Footer />
@@ -13,7 +13,6 @@
 <script>
 import Footer from '@/components/Footer.vue'
 import hotels from '../assets/data/api.json'
-
 
 export default {
 
