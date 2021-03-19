@@ -13,7 +13,23 @@ const routes = [
     path: '/caminos',
     name: 'Caminos',
     component: () => import('../views/Caminos.vue')
+  },
+  {
+    path: '/costa',
+    name: 'Costa',
+    component: () => import('../views/Costa.vue')
+  },
+  {
+    path: '/primitivo',
+    name: 'Primitivo',
+    component: () => import('../views/Primitivo.vue')
+  },
+  {
+    path: '/salvador',
+    name: 'Salvador',
+    component: () => import('../views/Salvador.vue')
   }
+ 
 ]
 
 const router = new VueRouter({
