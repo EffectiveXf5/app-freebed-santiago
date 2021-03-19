@@ -7,7 +7,12 @@ const routes = [
   {
     path: '/',
     name: 'Registro',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Registro.vue')
+    component: () => import('../views/Registro.vue')
+  },
+  {
+    path: '/caminos',
+    name: 'Caminos',
+    component: () => import('../views/Caminos.vue')
   }
 ]
 

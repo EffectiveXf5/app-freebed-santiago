@@ -1,31 +1,31 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Registro</router-link>
+      <router-link to="/">Registro</router-link> |
+      <router-link to="/caminos">Caminos</router-link>
     </div>
     <router-view/>
   </div>
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
 
-#nav {
-  padding: 30px;
-}
+  *{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+  }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+  :root {
+      --primary-color: #9ccf31;
+      --secondary-color: #f7d708;
+      --color-icons: #536df6;
+      --complementary-color: #ff9e00;
+      --contact-color: #ce0000;
+      --font-family: 'Redressed', cursive;
+  }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>
