@@ -46,7 +46,7 @@ export default {
     }
 
     main section {
-        margin-top: 10vh;
+        margin-top: 8vh;
     }
 
     main section article {
@@ -54,8 +54,8 @@ export default {
         height: 20vh;
         margin: auto;
         margin-top: 2vh;
-        background-color: red;
-        border-radius: 15px;
+        border-radius: 10px;
+        background-color: var(--input-color);
         display: grid;
         grid-template-areas: "i t" "i d" "i p" "i ic";
         grid-template-columns: 30vw 1fr;
@@ -80,6 +80,7 @@ export default {
     main section article img {
         grid-area: i;
         background-color: var(--contact-color);
+        border-radius: 10px;
     }
 
     main section article span {

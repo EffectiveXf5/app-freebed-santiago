@@ -12,7 +12,7 @@
         <label>Contraseña</label>
         <input type="password" placeholder="Contraseña">
 
-        <input class="input-submit-singUp" type="submit" value="login">
+        <input class="input-submit-singUp" type="submit" value="Acceder">
         <button class="btn-singUp" @click="activeSingUpForm = true">Registrarse</button>
       </form>
     </section>
@@ -40,7 +40,7 @@
           <option value="ADMIN">Hospedador</option>
         </select>
         
-        <input class="input-submit-singIn" type="submit" value="logup">
+        <input class="input-submit-singIn" type="submit" value="Registrarse">
         <button class="btn-singIn" @click="activeSingUpForm = false">Volver a acceso</button>
       </form>
     </section>
@@ -109,7 +109,7 @@ export default {
 
   .input-submit-singUp,
   .input-submit-singIn {
-    padding: 1vh;
+    padding: 0.5vh;
     width: 28vw;
     background-color: var(--color-button);
     border: 1px solid var(--primary-color);

@@ -46,7 +46,7 @@ export default {
     }
     
     main section {
-        margin-top: 10vh;
+        margin-top: 8vh;
     }
 
     main section article {
@@ -80,6 +80,7 @@ export default {
     main section article img {
         grid-area: i;
         background-color: var(--contact-color);
+        border-radius: 10px;
     }
 
     main section article span {
