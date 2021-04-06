@@ -52,9 +52,6 @@ export default {
 
 <style scoped>
 
-  main {
-    
-  }
 
 </style>
 
