@@ -2,11 +2,11 @@
   <footer>
       <ul>
         <li>
-          <i class="fas fa-user"></i>
+          <router-link to="/"><i class="fas fa-user"></i></router-link>
         </li>
 
         <li>
-          <i class="fas fa-bed"></i>
+          <router-link to="/caminos"><i class="fas fa-bed"></i></router-link>
         </li>
           
         <li>
