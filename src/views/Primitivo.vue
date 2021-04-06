@@ -42,6 +42,10 @@ export default {
 
 <style scoped> 
 
+    main {
+        background-color: var(--secondary-color);
+    }
+    
     main section {
         margin-top: 10vh;
     }

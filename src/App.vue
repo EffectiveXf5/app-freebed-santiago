@@ -15,7 +15,6 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    background-color: var(--secondary-color);
   }
 
   :root {
