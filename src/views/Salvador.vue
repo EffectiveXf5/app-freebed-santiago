@@ -1,5 +1,6 @@
 <template>
     <main>
+        <Header />
         <section>
             <article v-for="hotel in hotels" :key="hotel.id">
                 <h3>{{hotel.title}}</h3>
@@ -11,12 +12,14 @@
 </template>
 
 <script>
+import Header from '@/components/Header.vue'
 import Footer from '@/components/Footer.vue'
 
 export default {
 
     name:'Costa',
     components: {
+        Header,
         Footer
     },
 
