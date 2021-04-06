@@ -1,8 +1,17 @@
 <template>
   <main>
-    <router-link to ="/costa">Costa</router-link>
-    <router-link to ="/primitivo">Primitivo</router-link>
-    <router-link to ="/salvador">Salvador</router-link>
+    <router-link to ="/costa">
+      <img src="../assets/img/caminonorte.jpg" alt="">
+    </router-link>
+
+    <router-link to ="/primitivo">
+      <img src="../assets/img/caminoSalvador.png" alt="">
+    </router-link>
+
+    <router-link to ="/salvador">
+      <img src="../assets/img/caminoPrimitivo.jpg" alt="">
+    </router-link>
+
     <Footer />
   </main>
 </template>
@@ -23,3 +32,11 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+  main img {
+    width: 90vw;
+    height: 25vh;
+    margin: auto;
+  }
+</style>
