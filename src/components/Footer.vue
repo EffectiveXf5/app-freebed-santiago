@@ -10,7 +10,7 @@
         </li>
           
         <li>
-          <i class="fas fa-comment-alt"></i>
+          <router-link to="/foro"><i class="fas fa-comment-alt"></i></router-link>
         </li>
 
         <li>
