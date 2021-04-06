@@ -33,6 +33,7 @@ export default {
       position: fixed;
       bottom: 0;
       width: 100%;
+      border-radius: 5vh 5vh 0vh 0vh;
     }
 
     footer ul {
