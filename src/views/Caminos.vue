@@ -24,6 +24,7 @@ import Footer from '@/components/Footer.vue'
 
 export default {
   name: 'Caminos',
+  
   components: {
     Costa,
     Primitivo,
@@ -34,9 +35,18 @@ export default {
 </script>
 
 <style scoped>
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   main img {
+    border-radius: 15px solid black;
     width: 90vw;
-    height: 25vh;
+    height: 20vh;
     margin: auto;
   }
+  
 </style>
