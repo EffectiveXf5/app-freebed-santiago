@@ -2,23 +2,23 @@
   <footer>
       <ul>
         <li>
-          <img src="../assets/icons/profile-user.svg" alt="Icono de usuario para login">
+          <i class="fas fa-user"></i>
         </li>
 
         <li>
-          <img src="../assets/icons/bed.svg" alt="Icono de una cama">
+          <i class="fas fa-bed"></i>
         </li>
           
         <li>
-          <img src="../assets/icons/chat.svg" alt="Icono de mensajes para chat">
+          <i class="fas fa-comment-alt"></i>
         </li>
 
         <li>
-          <img src="../assets/icons/location-pin.svg" alt="Icono de localización">  
+          <i class="fas fa-map-marker-alt"></i>  
         </li>
       </ul>
   </footer>
-</template>icons/
+</template>
 
 <script>
 export default {
@@ -39,6 +39,10 @@ export default {
       padding: 1.5vh;
       display: flex;
       justify-content: space-between;
+    }
+
+    footer ul li i {
+      color: var(--color-icons);
     }
 
 </style>

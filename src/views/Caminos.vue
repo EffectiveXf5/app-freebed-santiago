@@ -1,10 +1,10 @@
 <template>
-  <div class="home">
+  <main>
     <router-link to ="/costa">Costa</router-link>
     <router-link to ="/primitivo">Primitivo</router-link>
     <router-link to ="/salvador">Salvador</router-link>
     <Footer />
-  </div>
+  </main>
 </template>
 
 <script>

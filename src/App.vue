@@ -22,7 +22,7 @@
   :root {
       --primary-color: #9ccf31;
       --secondary-color: #f7d708;
-      --color-icons: #536df6;
+      --color-icons: #C1545A;
       --complementary-color: #ff9e00;
       --contact-color: #ce0000;
       --font-family: 'Redressed', cursive;
