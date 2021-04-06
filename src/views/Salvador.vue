@@ -2,13 +2,15 @@
     <main>
     <Header />
         <section>
-            <article v-for="hotel in items" :key="hotel.id">
-                <h3>{{hotel.title}}</h3>
-                <h5>{{hotel.direction}}</h5>
-                <h5>{{hotel.price}}</h5>
-                <img :src="hotel.img" alt="">
-                <span>{{hotel.extras}}</span>
-            </article>
+            <router-link to="/bedroom">
+                <article v-for="hotel in items" :key="hotel.id">
+                    <h3>{{hotel.title}}</h3>
+                    <h5>{{hotel.direction}}</h5>
+                    <h5>{{hotel.price}}</h5>
+                    <img :src="hotel.img" alt="">
+                    <span>{{hotel.extras}}</span>
+                </article>
+            </router-link>
         </section>
     <Footer />
     </main>

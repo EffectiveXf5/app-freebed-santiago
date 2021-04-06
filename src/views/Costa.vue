@@ -50,7 +50,7 @@ export default {
         height: 20vh;
         margin: auto;
         margin-top: 2vh;
-        background-color: var(--input-color);
+        background-color: red;
         border-radius: 15px;
         display: grid;
         grid-template-areas: "i t" "i d" "i p" "i ic";
