@@ -18,11 +18,12 @@
   }
 
   :root {
-      --primary-color: #9ccf31;
-      --secondary-color: #f7d708;
+      --primary-color: #C1545A;
+      --secondary-color: #F6F6F6;
       --color-icons: #C1545A;
-      --complementary-color: #ff9e00;
-      --contact-color: #ce0000;
+      --complementary-color: #B8B5FF;
+      --contact-color: #DFBFC0;
+      --border-contact-color: #C1545A;
       --font-family: 'Redressed', cursive;
   }
 

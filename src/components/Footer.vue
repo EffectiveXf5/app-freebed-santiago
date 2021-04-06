@@ -34,6 +34,7 @@ export default {
       bottom: 0;
       width: 100%;
       border-radius: 3vh 3vh 0vh 0vh;
+      box-shadow: 0px -5px 30px 0px rgba(0, 0, 0, .25);
     }
 
     footer ul {
