@@ -1,5 +1,6 @@
 <template>
     <main>
+    <Header />
         <section>
             <article v-for="hotel in items" :key="hotel.id">
                 <h3>{{hotel.title}}</h3>
@@ -11,6 +12,7 @@
 </template>
 
 <script>
+import Header from '@/components/Header.vue'
 import Footer from '@/components/Footer.vue'
 import hotels from '../assets/data/api.json'
 
@@ -18,6 +20,7 @@ export default {
 
     name:'Primitivo',
     components: {
+        Header,
         Footer
     },
 
