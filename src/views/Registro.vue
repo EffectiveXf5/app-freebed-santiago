@@ -5,7 +5,7 @@
     </figure>
 
     <section>
-      <form>
+      <form v-if="activeSingUpForm">
         <label>Email</label>
         <input type="email" placeholder="Usuario...">
 
@@ -13,11 +13,12 @@
         <input type="password" placeholder="Contraseña...">
 
         <input type="submit" value="login">
+        <button ></button>
       </form>
     </section>
 
     <section>
-      <form>
+      <form v-if="activeSingUpForm">
         <label>Nombre</label>
         <input type="text" placeholder="Nombre...">
 
@@ -32,6 +33,14 @@
 
         <label>Contraseña</label>
         <input type="password" placeholder="Contraseña...">
+
+        <section>
+          <p>Registrarte como...</p>
+          <label for="peregrino">peregrino</label>
+          <input type="radio" id="peregrino" name="tipoCuenta" value="peregrino" checked>
+          <label for="hospedador">hospedador</label>
+          <input type="radio" id="hospedador" name="tipoCuenta" value="hospedador">
+        </section>
         
         <input type="submit" value="logup">
       </form>
@@ -46,15 +55,15 @@ import Footer from '@/components/Footer.vue'
 export default {
   components: {
     Footer
+  },
+  data(){
+    return{
+      activeSingUpForm: false
+    }
   }
 }
 </script>
 
-<style scoped>
-
-  main {
-    
-  }
+<style>
 
 </style>
-
