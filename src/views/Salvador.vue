@@ -1,10 +1,13 @@
 <template>
     <main>
-        <Header />
+    <Header />
         <section>
-            <article v-for="hotel in hotels" :key="hotel.id">
+            <article v-for="hotel in items" :key="hotel.id">
                 <h3>{{hotel.title}}</h3>
-                <p>{{hotel.body}}</p>
+                <h5>{{hotel.direction}}</h5>
+                <h5>{{hotel.price}}</h5>
+                <img :src="hotel.img" alt="">
+                <span>{{hotel.extras}}</span>
             </article>
         </section>
     <Footer />
@@ -14,6 +17,7 @@
 <script>
 import Header from '@/components/Header.vue'
 import Footer from '@/components/Footer.vue'
+import hotels from '../assets/data/api.json'
 
 export default {
 
@@ -23,37 +27,58 @@ export default {
         Footer
     },
 
-    data() {
-        return {
-            hotels: ''
-        }
-    },
-
-    created() {
-        this.getHotels();
-    },
-
-    methods: {
-        async getHotels() {
-            try{
-                const res = await fetch('https://jsonplaceholder.typicode.com/posts')
-                const data = await res.json()
-                console.log(data)
-                this.hotels = data;
-            }catch(error){
-                console.log(error)
-            }
+    computed: {
+        items() {
+            return hotels.map((hotel) => {
+                return hotel
+            })
         }
     }
 }
 </script>
 
-<style> 
+<style scoped> 
+
+    main section {
+        margin-top: 10vh;
+    }
 
     main section article {
-        width: 75vw;
-        height: 25vh;
+        width: 80vw;
+        height: 20vh;
         margin: auto;
+        margin-top: 2vh;
+        background-color: var(--input-color);
+        border-radius: 15px;
+        display: grid;
+        grid-template-areas: "i t" "i d" "i p" "i ic";
+        grid-template-columns: 30vw 1fr;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    main section article h3 {
+        grid-area: t;
+        padding: 1vh;
+    }
+
+    main section article h5:nth-child(2) {
+        grid-area: d;
+        padding: 1vh;
+    }
+
+    main section article h5:nth-child(3) {
+        grid-area: p;
+        padding: 1vh;
+    }
+
+    main section article img {
+        grid-area: i;
+        background-color: var(--contact-color);
+    }
+
+    main section article span {
+        grid-area: ic;
+        padding: 1vh;
     }
 
 </style>

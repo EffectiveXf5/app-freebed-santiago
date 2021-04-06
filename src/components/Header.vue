@@ -1,6 +1,6 @@
 <template>
   <header>
-      <h3>Hola {{fulanito}}</h3>
+      <h3>Hola {{}}</h3>
       <img src="../assets/img/logo.jpg" alt="">
   </header>
 </template>
@@ -11,15 +11,21 @@ export default {
 }
 </script>
 
-<style>
-    header{
-        padding: 3vh;
-        width:100%;
+<style scoped>
+
+    header {
+        position: fixed;
+        top: 0;
+        padding: 2vh;
+        width: 100%;
         display: flex;
         justify-content:space-between;
+        background-color: var(--secondary-color);
     }
-    header img{
+
+    header img {
         width: 9vw;
         height: 9vw;
     }
+
 </style>

@@ -1,7 +1,7 @@
 <template>
   <main>
     <Header />
-
+    
     <router-link to ="/costa">
       <h4>Camino de la costa</h4>
       <img src="../assets/img/caminonorte.jpg" alt="">
@@ -57,7 +57,7 @@ export default {
   }
 
   main h4 {
-    margin-top: 2vh;
+    margin-top: 8vh;
   }
   
 </style>
