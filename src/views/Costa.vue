@@ -53,7 +53,7 @@ export default {
         width: 80vw;
         height: 20vh;
         margin: auto;
-        margin-top: 2vh;
+        margin-top: 2vh; 
         border-radius: 10px;
         background-color: var(--input-color);
         display: grid;

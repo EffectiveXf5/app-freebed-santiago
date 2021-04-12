@@ -6,8 +6,9 @@
         "description": "Lorem impsun fasun rasun lasun misun",
         "price": "8€/noche",
         "img": "../assets/img/hotel.jpg",
-        "extras": "icons",
-        "freeBeds": "0",
+        "extras": "../assets/icons/iconFood.png",
+        "beds": 10,
+        "freeBeds": 0,
         "reviews": "4.5/5"
       }
 ]
