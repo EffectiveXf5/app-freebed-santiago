@@ -33,7 +33,7 @@ export default {
       position: fixed;
       bottom: 0;
       width: 100%;
-      border-radius: 3vh 3vh 0vh 0vh;
+      border-radius: 10px 10px 0 0;
       box-shadow: 0px -5px 30px 0px rgba(0, 0, 0, .25);
     }
 
@@ -45,6 +45,7 @@ export default {
 
     footer ul li i {
       color: var(--color-icons);
+      font-size: 1.5rem;
     }
 
 </style>
