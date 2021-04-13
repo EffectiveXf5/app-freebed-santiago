@@ -33,8 +33,12 @@ const routes = [
     path: '/bedroom',
     name: 'Bedroom',
     component: () => import('../views/Bedroom.vue')
+  },
+  {
+    path: '/map',
+    name: 'Map',
+    component: () => import('../views/Map.vue')
   }
- 
 ]
 
 const router = new VueRouter({
