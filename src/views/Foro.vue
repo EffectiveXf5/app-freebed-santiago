@@ -1,10 +1,8 @@
 <template>
-      <div>
-          <h4 id=""></h4>
-      </div>
-
-
-      <Footer />
+  <main>
+    
+  <Footer />
+  </main>
 </template>
 
 <script>
@@ -18,7 +16,8 @@ name:'Foro',
 }
 </script>
 
-<style>
+<style scoped>
+
   body{
     background-color: var(--secondary-color);
   }
