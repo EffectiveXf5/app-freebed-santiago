@@ -6,7 +6,7 @@
 
     <section>
       <form v-if="!activeSingUpForm">
-        <label>Email</label>
+        <label>Email.</label>
         <input type="email" placeholder="Usuario">
 
         <label>Contraseña</label>
