@@ -10,7 +10,7 @@ Vue.use(VueGeolocation)
 import * as VueGoogleMaps from 'vue2-google-maps'
 Vue.use(VueGoogleMaps, {
   load: {
-    key:'AIzaSyBLLyvlndXOfLNuu30_QeSzXzyfjlQ6Pgw'
+    key:''
   }
 })
 
