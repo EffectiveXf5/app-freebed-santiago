@@ -1,6 +1,6 @@
 <template>
   <main>
-    
+
   <Footer />
   </main>
 </template>
@@ -21,4 +21,5 @@ name:'Foro',
   body{
     background-color: var(--secondary-color);
   }
+  
 </style>
